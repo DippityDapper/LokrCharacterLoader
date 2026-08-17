@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>LokrCharacterLoader</AssemblyName>
+    <RootNamespace>LokrCharacterLoader</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Private=false — see the identical note in LokrEncyclopedia.csproj: LokrModAPI.dll is
+         deployed separately and must not be duplicated into this plugin's own folder. -->
+    <ProjectReference Include="..\LokrModAPI\LokrModAPI.csproj" Private="false" />
+  </ItemGroup>
+
+</Project>
